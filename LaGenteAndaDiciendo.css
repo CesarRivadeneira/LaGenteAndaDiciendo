@@ -1,0 +1,205 @@
+#contenedor {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(227, 234, 153);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#cabecera {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(227, 234, 153);
+     border: 2px solid black;
+     border-radius: 15px;
+}
+
+#cabecera #titulo_cabecera{
+    margin-top: 0;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+}
+
+/*Area del contenido, contiene a las cajas dentro*/
+#contenido {
+    width: 100%;
+    height: 1150px;
+    background-color: rgb(251, 251, 251);
+}
+
+.caja_cont {
+    width: 415px;
+    height: 350px;
+    align-items: center;
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(227, 234, 153);
+    margin: 10px;
+}
+.caja_cont .titulo_cont{
+    display: flex;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 30px;
+}
+.caja_cont hr{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.caja_cont .descripcion{
+    padding: 10px;
+    margin: 10px;
+}
+/*Area del formulario*/
+#formulario { 
+    /*margin: ARRIBA/DERECHA/ABAJO/IZQUIERDA;*/
+    margin: 0px auto 40px auto;
+    margin-bottom: 30px;
+    width: 80%;
+    height: 480px;
+    background-color: rgb(227, 234, 153);
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#formulario #titulo_formulario h1{
+    margin: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+}
+
+#formulario .form_area {
+    font-size: 25px; 
+    margin-left: 60px;
+    
+}
+#formulario .form_area .form_text {
+  font-size: 20px;
+  margin: 30px;
+  margin-bottom: 20px;
+}
+#formulario .form_area textarea{
+    margin-left: 250px;
+    width: 40%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;    
+}
+#formulario .form_area button{
+    margin-left: 400px;
+    font-size: 40px;
+    border-radius: 15px;
+    background-color: rgb(254, 254, 254);
+}
+#formulario .form_area button:hover{
+    background-color: rgb(48, 253, 48);
+}
+
+
+
+#pie {
+    width: 100%;
+    height: 70px;
+    background-color:rgb(227, 234, 153);
+    border-radius: 15px;
+    border: 2px solid black;
+    
+}
+#pie p{
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
+}
+
+@media all and (min-width: 600px) and (max-width: 1025px) {
+    #contenedor {
+        width: 95%;
+        height: auto;
+        background-color: rgb(255, 255, 255);   }
+    
+    
+    #cabecera #titulo_cabecera{
+         height: auto;
+         font-size: 60px;
+    }
+    #contenido{
+        background-color: rgb(255, 255, 255);
+        height: 1750px;
+    }
+   
+    .caja_cont {
+        width: 46%;
+        height: auto;
+    }
+     #formulario{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 0;
+
+}
+ #pie{
+    margin-top: 20px;
+ }
+
+}
+@media all and (max-width: 599px) {
+    #contenedor {
+        width: 95%;
+        height: auto;
+        background-color: rgb(255, 255, 255);   }
+
+    #cabecera {
+    height: 80%;
+}
+    #cabecera #titulo_cabecera{
+         height: auto;
+         font-size: 30px;
+    }
+    .caja_cont {
+        float: none;
+        width: auto;
+    }
+    .caja_cont .titulo_cont{
+        font-size: 22px;
+    }
+    
+    #contenido {
+        height: auto;
+    }
+    #formulario{
+         width: 95%;
+        height: 600px;
+}
+#formulario #titulo_formulario h1{
+    font-size: 30px;
+}
+#formulario .form_area {
+    font-size: 25px; 
+    margin-left: 10px;
+}
+#formulario .form_area .form_text { 
+  margin: 30px;
+}
+#formulario .form_area input{
+    margin-left: 30px;
+}
+#formulario .form_area textarea{
+    margin-left: 30px;   
+}
+#formulario .form_area button{
+    margin-left: 120px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+    }
+    
